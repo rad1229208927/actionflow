@@ -43,21 +43,33 @@ actionflow validate .github/workflows/ci.yml
 
 ---
 
-## 📦 Available Templates
+## 📦 Available Templates (15+)
 
 ### CI/CD
 - `nodejs-ci` - Node.js build and test
 - `python-ci` - Python build and test
+- `go-ci` - Go build and test
+- `rust-ci` - Rust build and test
+- `java-maven` - Java Maven build
+- `php-ci` - PHP build and test
+- `release-drafter` - Auto draft releases
 
 ### Deployment
 - `docker-build-push` - Build and push Docker image
 - `vercel-deploy` - Deploy to Vercel
+- `aws-deploy` - Deploy to AWS
+- `github-pages` - Deploy to GitHub Pages
 
 ### Testing
 - `jest-coverage` - Jest tests with coverage
 
 ### Security
 - `security-scan` - Dependency security scanning
+- `dependency-review` - Review dependency changes
+- `codeql` - CodeQL security analysis
+
+### Monitoring
+- `slack-notify` - Slack notifications
 
 ---
 

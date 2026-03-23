@@ -193,3 +193,17 @@ export function searchTemplates(query: string): WorkflowTemplate[] {
 export function getCategories(): string[] {
   return [...new Set(templates.map(t => t.category))];
 }
+
+/**
+ * Get total template count
+ */
+export function getTemplateCount(): number {
+  return templates.length;
+}
+
+/**
+ * Get featured templates
+ */
+export function getFeaturedTemplates(): WorkflowTemplate[] {
+  return templates.slice(0, 6);
+}
