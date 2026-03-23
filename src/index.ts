@@ -14,6 +14,7 @@ import { validateWorkflow } from './commands/validate.js';
 import { listTemplates } from './commands/templates.js';
 import { suggestWorkflow } from './commands/suggest.js';
 import { exportWorkflow } from './commands/export.js';
+import { previewWorkflow } from './commands/preview.js';
 
 const program = new Command();
 
@@ -103,6 +104,22 @@ program
   .action(async (file, options) => {
     try {
       await exportWorkflow(file, options);
+    } catch (error) {
+      console.error(chalk.red(`❌ Error: ${error.message}`));
+      process.exit(1);
+    }
+  });
+
+// Preview command
+program
+  .command('preview')
+  .description('👀 Preview workflow visually (HTML)')
+  .argument('<file>', 'Workflow file')
+  .option('-o, --output <file>', 'Output HTML file')
+  .option('--open', 'Open in browser')
+  .action(async (file, options) => {
+    try {
+      await previewWorkflow(file, options);
     } catch (error) {
       console.error(chalk.red(`❌ Error: ${error.message}`));
       process.exit(1);

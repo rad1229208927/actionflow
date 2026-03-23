@@ -52,6 +52,42 @@ ActionFlow 是一个 GitHub Actions 可视化构建工具，让你无需手写 Y
 
 ## ✨ 功能特性
 
+### 🎨 可视化编辑器
+
+交互式终端界面，让工作流编辑变得简单。
+
+```bash
+# 启动编辑器
+actionflow edit
+
+# 编辑现有工作流
+actionflow edit .github/workflows/ci.yml
+```
+
+**功能**:
+- ✅ 菜单式操作
+- ✅ 实时预览
+- ✅ 模板选择
+- ✅ Job 管理
+
+### 👀 HTML 预览
+
+生成美观的工作流可视化 HTML。
+
+```bash
+# 生成预览
+actionflow preview .github/workflows/ci.yml
+
+# 在浏览器打开
+actionflow preview .github/workflows/ci.yml --open
+```
+
+**效果**:
+- ✅ 工作流整体概览
+- ✅ Job 依赖关系
+- ✅ 步骤详细展示
+- ✅ 触发条件标签
+
 ### 📦 模板库
 
 内置 6 个常用模板，覆盖主流场景。

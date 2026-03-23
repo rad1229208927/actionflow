@@ -14,7 +14,8 @@ Visual builder for GitHub Actions workflows. Create, edit, and manage CI/CD pipe
 - 📦 **Template Library** - Pre-built workflows for common scenarios
 - 💡 **Smart Suggestions** - Auto-detect project type and recommend workflows
 - ✅ **Validation** - Catch YAML errors before commit
-- 🎨 **Visual Editor** - (Coming soon) Drag-and-drop workflow builder
+- 🎨 **Visual Editor** - Interactive TUI for workflow editing
+- 👀 **HTML Preview** - Generate beautiful workflow visualization
 - 📋 **Export** - Generate clean, readable YAML
 
 ---
